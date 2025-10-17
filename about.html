@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Paulina Youn</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                        accent: "#A1A1A1"
+                    },
+                    fontFamily: {
+                        display: "Inter"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-primary dark:text-background-light">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-6xl flex-1">
+                    <!-- Header -->
+                    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent/30 dark:border-accent/20 px-4 py-3">
+                        <div class="flex items-center gap-4">
+                            <h2 class="text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Paulina Youn</h2>
+                        </div>
+                        <nav class="hidden md:flex items-center gap-8">
+                            <a class="text-primary dark:text-white text-sm font-medium leading-normal" href="index.html">Home</a>
+                            <!-- <a class="text-primary dark:text-white text-sm font-medium leading-normal" href="index.html#projects">Projects</a> -->
+                            <a class="text-primary dark:text-white text-sm font-medium leading-normal" href="about.html">About</a>
+                            <!-- <a class="text-primary dark:text-white text-sm font-medium leading-normal" href="index.html#contact">Contact</a> -->
+                        </nav>
+                        <button class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-transparent text-primary dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                            <span class="material-symbols-outlined text-2xl">menu</span>
+                        </button>
+                    </header>
+
+                    <!-- Main Content -->
+                    <main class="flex-1 mt-10 px-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                            <!-- Profile Section -->
+                            <div class="lg:col-span-1 flex flex-col items-center lg:items-start">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-40 h-40 mb-6" style='background-image: url("images/profile.png");'></div>
+                                <h1 class="text-primary dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] text-center lg:text-left">Youn(Youne)</h1>
+                                <p class="text-accent dark:text-accent mt-2 text-center lg:text-left">
+                                    다정하고 이야기를 좋아하는 조금 엉뚱한 사람입니다. 새로운 것을 배우고 만드는 것을 즐기며, 사람들과의 소통을 통해 성장하는 것을 좋아합니다.
+                                </p>
+                            </div>
+
+                            <!-- Education & Experience Section -->
+                            <div class="lg:col-span-2">
+                                <!-- Education -->
+                                <section>
+                                    <h2 class="text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 border-b border-accent/30 dark:border-accent/20">Education</h2>
+                                    <div class="mt-6 grid grid-cols-[auto_1fr] gap-x-4">
+                                        <div class="flex flex-col items-center gap-1 pt-1">
+                                            <span class="material-symbols-outlined text-primary dark:text-white text-2xl">school</span>
+                                            <div class="w-px bg-accent/50 h-full"></div>
+                                        </div>
+                                        <div class="flex flex-1 flex-col pb-8">
+                                            <p class="text-primary dark:text-white text-base font-medium leading-normal">아동학 가정학사</p>
+                                            <p class="text-accent dark:text-accent text-sm font-normal leading-normal">가천대학교 | 2005 - 2009</p>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-1 pt-1">
+                                            <span class="material-symbols-outlined text-primary dark:text-white text-2xl">school</span>
+                                            <div class="w-px bg-accent/50 h-full"></div>
+                                        </div>
+                                        <div class="flex flex-1 flex-col pb-8">
+                                            <p class="text-primary dark:text-white text-base font-medium leading-normal">컴퓨터공학 석사</p>
+                                            <p class="text-accent dark:text-accent text-sm font-normal leading-normal">고려대학교 | 2021 - 2023</p>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-1 pt-1">
+                                            <span class="material-symbols-outlined text-primary dark:text-white text-2xl">school</span>
+                                        </div>
+                                        <div class="flex flex-1 flex-col">
+                                            <p class="text-primary dark:text-white text-base font-medium leading-normal">온라인 코스 및 자기주도학습</p>
+                                            <p class="text-accent dark:text-accent text-sm font-normal leading-normal">웹 개발, UI/UX 디자인 | 2022 - Present</p>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Work Experience -->
+                                <section class="mt-12">
+                                    <h2 class="text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 border-b border-accent/30 dark:border-accent/20">Work Experience</h2>
+                                    <div class="mt-6 grid grid-cols-[auto_1fr] gap-x-4">
+                                        <div class="flex flex-col items-center gap-1 pt-1">
+                                            <span class="material-symbols-outlined text-primary dark:text-white text-2xl">work</span>
+                                            <div class="w-px bg-accent/50 h-full"></div>
+                                        </div>
+                                        <div class="flex flex-1 flex-col pb-8">
+                                            <p class="text-primary dark:text-white text-base font-medium leading-normal">프론트엔드 개발자</p>
+                                            <p class="text-accent dark:text-accent text-sm font-normal leading-normal">에이치앤아이씨 | 2024 - Present</p>
+                                            <ul class="list-disc list-inside mt-2 text-accent dark:text-accent text-sm space-y-1">
+                                                <li>개인 프로젝트 및 웹 애플리케이션 개발</li>
+                                                <li>사용자 중심의 인터페이스 설계 및 구현</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-1 pt-1">
+                                            <span class="material-symbols-outlined text-primary dark:text-white text-2xl">work</span>
+                                        </div>
+                                        <div class="flex flex-1 flex-col">
+                                            <p class="text-primary dark:text-white text-base font-medium leading-normal">웹디자인 & 퍼블리셔</p>
+                                            <p class="text-accent dark:text-accent text-sm font-normal leading-normal">프리랜서 | 2018 - 2023</p>
+                                            <ul class="list-disc list-inside mt-2 text-accent dark:text-accent text-sm space-y-1">
+                                                <li>웹 서비스 유지보수 및 신규 기능 개발</li>
+                                                <li>팀 협업을 통한 프로젝트 진행 경험</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Skills -->
+                                <section class="mt-12">
+                                    <h2 class="text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 border-b border-accent/30 dark:border-accent/20">Skills</h2>
+                                    <div class="mt-6 flex flex-wrap gap-2">
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">HTML & CSS</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">React</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">Tailwind CSS</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">Git & GitHub</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">Responsive Design</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">UI/UX Design</span>
+                                        <span class="bg-primary/10 dark:bg-white/10 text-primary dark:text-white text-sm font-medium px-3 py-1 rounded-full">Figma</span>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- Footer -->
+                    <footer class="mt-20 border-t border-solid border-accent/30 dark:border-accent/20 px-4 py-6 text-center">
+                        <div class="flex justify-center gap-6 mb-4">
+                            <a class="text-accent dark:text-accent hover:text-primary dark:hover:text-white transition-colors" href="https://github.com/paulinayoun" target="_blank" rel="noopener noreferrer">
+                                <span class="material-symbols-outlined">code</span>
+                            </a>
+                            <a class="text-accent dark:text-accent hover:text-primary dark:hover:text-white transition-colors" href="mailto:your.email@example.com">
+                                <span class="material-symbols-outlined">alternate_email</span>
+                            </a>
+                            <a class="text-accent dark:text-accent hover:text-primary dark:hover:text-white transition-colors" href="#" target="_blank" rel="noopener noreferrer">
+                                <span class="material-symbols-outlined">person</span>
+                            </a>
+                        </div>
+                        <p class="text-accent dark:text-accent text-sm">© 2025 Paulina Youn. All Rights Reserved.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
